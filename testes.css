@@ -1,0 +1,284 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(6, 0, 53);
+    color: #f0f0f0;
+    line-height: 1.6;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+header {
+    padding: 0px 30px;
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border-bottom: 2px solid #730bb8;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background 0.4s ease;
+}
+
+header:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.principal-header {
+    background-color: rgba(224, 75, 75, 0.25);
+    border-bottom: 3px solid rgb(113, 104, 243);
+    height: 10%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.htmltitu {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.htmltitu:hover {
+    color: violet;
+    text-shadow: 0px 0px 8px rgba(238,130,238,0.6);
+}
+
+.titu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.titulos h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #ddd;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.titulos h1:hover {
+    color: #ba68ff;
+    transform: translateY(-2px);
+}
+
+.titu h1 {
+    margin: 0;
+    color: #ddd;
+}
+
+/* FUNDO VIDEO */
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: blur(6px) brightness(0.65);
+    transition: filter 0.5s ease;
+}
+
+.fundo:hover {
+    filter: blur(4px) brightness(0.85);
+}
+
+/* CONTAINERS */
+.containergeral {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    margin-top: 3%;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* CARDS / SANFONAS */
+.sanfonah1-container, 
+.sanfona_a-container, 
+.sanfona_botao-container, 
+.sanfona_img-container, 
+.sanfona_main-container, 
+.sanfona_input-container, 
+.sanfona_footer-container, 
+.sanfona_video-container, 
+.sanfona_audio-container, 
+.sanfona_pon-container {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sanfonah1-container:hover,
+.sanfona_a-container:hover,
+.sanfona_botao-container:hover,
+.sanfona_img-container:hover,
+.sanfona_main-container:hover,
+.sanfona_input-container:hover,
+.sanfona_footer-container:hover,
+.sanfona_video-container:hover,
+.sanfona_audio-container:hover,
+.sanfona_pon-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+}
+
+/* HEADERS DAS SANFONAS */
+.sanfonah1-header, 
+.sanfona_a-header, 
+.sanfona_botao-header, 
+.sanfona_img-header, 
+.sanfona_main-header, 
+.sanfona_input-header, 
+.sanfona_footer-header, 
+.sanfona_video-header, 
+.sanfona_audio-header, 
+.sanfona_pon-header {
+    background: linear-gradient(135deg, #311b92, #4527a0);
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #444;
+    outline: none;
+    transition: background 0.4s ease, padding-left 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sanfonah1-header:hover, 
+.sanfona_a-header:hover, 
+.sanfona_botao-header:hover, 
+.sanfona_img-header:hover, 
+.sanfona_main-header:hover, 
+.sanfona_footer-header:hover, 
+.sanfona_video-header:hover, 
+.sanfona_audio-header:hover, 
+.sanfona_pon-header:hover {
+    background: linear-gradient(135deg, #512da8, #673ab7);
+    padding-left: 25px;
+}
+
+/* CONTEÚDO ABERTO */
+.sanfonah1-content, 
+.sanfona_a-content, 
+.sanfona_botao-content, 
+.sanfona_img-content, 
+.sanfona_main-content, 
+.sanfona_input-content, 
+.sanfona_footer-content, 
+.sanfona_video-content, 
+.sanfona_audio-content, 
+.sanfona_pon-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0 18px;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out, background 0.4s ease;
+}
+
+.sanfonah1-content.active, 
+.sanfona_a-content.active, 
+.sanfona_img-content.active, 
+.sanfona_main-content.active, 
+.sanfona_input-content.active, 
+.sanfona_footer-content.active, 
+.sanfona_video-content.active, 
+.sanfona_audio-content.active, 
+.sanfona_pon-content.active, 
+.sanfona_botao-content.active {
+    max-height: 1000px; 
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* IMAGENS */
+.ex-tagh, .ex_img_gar, .img_roda_site, .img_jcs {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ex-tagh:hover, .ex_img_gar:hover, .img_roda_site:hover, .img_jcs:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* EXEMPLOS VIVOS ESPECIAIS */
+.rotacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: #fff;
+    margin: 50px auto;
+    animation: girar 3s linear infinite;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.act_ba {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+.act_ba:active {
+    background-color: #ffeb3b;
+}
+
+.transi {
+    width: 100%;
+    height: 200px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transi:hover {
+    background-color: #4caf50; 
+    color: #fff;
+}
+
+.hor {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horr {
+    transition: transform 1s ease;
+}
+.horr:hover {
+    transform: rotate(360deg);
+}

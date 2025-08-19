@@ -1,0 +1,45 @@
+.exbotao{
+    margin-top: 200px;
+}
+.h4ss{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid red;
+}
+.h4s2{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+}
+.h4s3{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+.h4s4{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.h4s5{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+}
+.h4s6{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.h4s7{
+    background: rgb(185, 185, 185);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.o_nome_da_sua_div{
+    cursor: url('imagens/cursor.png') 4 4, all-scroll;
+}
+.h4s8 { 
+  color: cyan;
+  text-shadow: 0 0 5px cyan, 0 0 10px blue;
+  background-color: black;
+}
